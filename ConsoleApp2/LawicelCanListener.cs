@@ -33,8 +33,8 @@ public class LawicelCanAdapter : IDisposable
                 DataBits = 8,
                 StopBits = StopBits.One,
                 Handshake = Handshake.None,
-                ReadTimeout = 200,
-                WriteTimeout = 200
+                ReadTimeout = 50,
+                WriteTimeout = 50
             };
 
             _serialPort.DataReceived += SerialPort_DataReceived;
